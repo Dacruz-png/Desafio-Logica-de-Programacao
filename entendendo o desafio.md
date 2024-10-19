@@ -1,6 +1,6 @@
 //**O Que deve ser utilizado**
 
-- Variáveis
+- Variáveis;
 - Operadores
 - Laços de repetição
 - Estruturas de decisões
