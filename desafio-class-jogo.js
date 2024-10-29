@@ -59,18 +59,22 @@ class heroes{
 
 
 let HeroHacker = new heroes("Marcos Holloway", 24,"Hacker", "DDOS")
-HeroHacker.atacar()
 
 let HeroGuerreiro = new heroes("Kratos", 30,"Guerreiro", "Espada")
 
 let HeroMago = new heroes("Mestre dos Magos", 89,"Mago", "Magia")
 
-let HeroMonge= new heroes("Dalai Lama", 70,"Monge", "Marciais")
+let HeroMonge = new heroes("Dalai Lama", 70,"Monge", "Marciais")
 
+let HeroNinja = new heroes("Jack Chan", 55,"Ninja", "Shuriken")
 
-let HeroNinja= new heroes("Jack Chan", 55,"Ninja", "Shuriken")
+//Este hero foi criado para testar o default do switch abaixo 
+let HeroDefault = new heroes("Default", " ", " ", " ")
 
-const ataquesDosHeroes = "" 
+// deixei aqui para alternar entre os "Hero" basta somente acresentar o seu hero desejado na const abaixo
+// as opções são: [HeroHacker] | [HeroGuerreiro] | [HeroMago] | [HeroMonge] | [HeroNinja] |
+
+const ataquesDosHeroes = HeroMonge
 
 switch(ataquesDosHeroes){
     case HeroHacker:
@@ -89,5 +93,6 @@ switch(ataquesDosHeroes){
         console.log(HeroNinja.atacar())
     break;
     default:
-
+        console.log("Este heroi ainda não foi desenvolvido!")
 }
+
